@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Day5_Demo</display-name>
+	<servlet>
+		<servlet-name>loginpage1</servlet-name>
+		<servlet-class>com.tech.LoginEmployee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginpage1</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>registration</servlet-name>
+		<servlet-class>com.tech.InsertIntoEmployee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ViewData</servlet-name>
+		<servlet-class>com.tech.ViewTable</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewData</servlet-name>
+		<url-pattern>/table</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deleteData</servlet-name>
+		<servlet-class>com.tech.DeleteDataFromEmployee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteData</servlet-name>
+		<url-pattern>/deleteemp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>editdata1</servlet-name>
+		<servlet-class>com.tech.EditEmployee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editdata1</servlet-name>
+		<url-pattern>/editemp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>update1</servlet-name>
+		<servlet-class>com.tech.UpdateEmployee</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update1</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+</web-app>
